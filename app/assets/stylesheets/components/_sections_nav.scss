@@ -1,0 +1,21 @@
+.nav-sections {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $light-gray;
+}
+
+.nav-sections a {
+  font-size: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-sections a:last-child {
+  text-transform: uppercase;
+}
+
+.nav-sections a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,76 @@
+.main-content {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.col-A {
+  display: inline;
+  width: 500px;
+  margin-right: 15px;
+}
+
+.col-B {
+  display: inline;
+}
+
+.col-1 {
+  width: 30%;
+}
+
+.col-2 {
+  width: 360px;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  width: 35%;
+  margin-left: 15px;
+}
+
+.col-1 ul {
+  padding-left: 10px;
+}
+
+h2 {
+  font-family: $serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.sub-heading {
+  color: $gray;
+  font-size: 8px;
+}
+
+a {
+  text-decoration: underline;
+  color: $blue;
+  font-size: 8px;
+}
+
+p, li {
+  font-family: $serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+.main-content li {
+  list-style: disc;
+}
+
+/* Attribute selector targeting all elements
+with a class attribute containing 'col-' */
+[class*='col-'] {
+  // ...
+}
+
+[class*='col-']:last-of-type {
+  // ...
+}
+
+@media all and (max-width: 1000px) {
+  [class*='col-'] {
+    // width:
+  }
+}
